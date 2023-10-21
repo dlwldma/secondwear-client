@@ -13,7 +13,7 @@ export default function ProductCard({ product }: { product: Product }) {
         hover:bg-red-200"
         >
           <Image
-            className=""
+            alt="heart icon"
             src="/icon/heart-icon.svg"
             width={25}
             height={25}
@@ -28,13 +28,13 @@ export default function ProductCard({ product }: { product: Product }) {
       </div>
       <span className="flex justify-between">
         <h3 className="font-semibold font-lg">{product.title}</h3>
-        <h3 className="font-semibold font-lg">${product.price}</h3>
+        <h3 className="font-semibold font-lg ">${product.price}</h3>
       </span>
       <h5 className="font-sm">{product.description}</h5>
       <div>
         {[...Array(product.stars)].map((x, i) => {
           return (
-            <span className="text-[#9b6484] text-lg " key={i}>
+            <span className="text-[#8b71e1] text-lg " key={i}>
               &#9733;
             </span>
           );
@@ -43,8 +43,8 @@ export default function ProductCard({ product }: { product: Product }) {
       <button
         className="w-[fit-content] px-5 py-2 
         text-sm
-      border-2 border-[#9b6484]
-      rounded-3xl text-[#9b6484]"
+      border border-gray-500
+      rounded-3xl text-gray-500"
       >
         Añadir al carro
       </button>

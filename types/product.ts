@@ -4,6 +4,5 @@ export interface Product {
   title: string;
   description: string;
   stars: number;
-  reviewCount: number;
   image: string;
 }

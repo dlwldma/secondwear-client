@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+.landing-background-gradient {
+  background: rgb(139, 113, 225);
+  background: linear-gradient(
+    90deg,
+    rgba(139, 113, 225, 1) 0%,
+    rgba(2, 0, 36, 1) 100%
+  );
+}
+
+.footer-list li {
+  margin-bottom: 10px;
+}
+.primary-color {
+  color: #8b71e1;
+}
 .font-sm {
   font-size: clamp(0.7rem, 2vw + 0.1rem, 0.8rem);
 }
@@ -20,9 +35,9 @@
  */
 .footer-items {
   display: grid;
-  height: 200px;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(5, auto);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 30px;
 }
 
 .company {
@@ -84,8 +99,8 @@
 
 @media (min-width: 1240px) {
   .footer-items {
-    grid-template-columns: repeat(6, auto);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 
   .company {
@@ -94,24 +109,24 @@
   }
   .department {
     grid-column: 3;
-    grid-row: 1 / span 3;
+    grid-row: 1 / span 2;
   }
   .about-us {
     grid-column: 4;
-    grid-row: 1 / span 3;
+    grid-row: 1 / span 2;
   }
   .services {
     grid-column: 5;
-    grid-row: 1 / span 3;
+    grid-row: 1 / span 2;
   }
   .help {
     grid-column: 6;
-    grid-row: 1 / span 3;
+    grid-row: 1 / span 2;
   }
 
   .payment {
     grid-column: 1 / span 2;
-    grid-row: 2 / span 2;
+    grid-row: 2 / span 1;
   }
 }
 
