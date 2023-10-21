@@ -17,12 +17,12 @@ export default function Home() {
           width={750}
           height={20}
         />
-        <div className="flex justify-start items-center md:w-[min(1250px,95vw)] text-white">
+        <div className="flex justify-start items-center md:w-[min(1250px,95vw)] text-white p-5 md:p-0">
           <div className=" w-full lg:w-[50%]">
-            <h2 className="font-bold text-[4rem]">
+            <h2 className="font-bold font-3xl">
               Compra y vende tu ropa usada.
             </h2>
-            <h2 className="text-[1.3rem]">
+            <h2 className="font-2xl">
               Sin intermediarios, sin dificultades y al precio que tú decidas.
             </h2>
             <button

@@ -69,12 +69,12 @@ export default function RootLayout({
           </div>
         </header>
 
-        {children}
+        <div className="px-5 lg:p-0">{children}</div>
         <footer
           className="w-[min(1250px,95vw)] 
           m-auto mt-8"
         >
-          <section className="footer-items">
+          <section className="footer-items p-5 lg:p-0">
             <article className="company">
               <div className="flex flex-col justify-start">
                 <a className="order-1 sm:order-0" href="/">
